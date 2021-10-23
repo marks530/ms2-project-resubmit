@@ -5,7 +5,7 @@
 
 
 Here is the deployed version on the site : 
-**[Golf Score App](https://marks530.github.io/Second-Milestone-Project-MS2/)**
+**[Golf Score App](https://marks530.github.io/ms2-project-resubmit/)**
 
 # **Table of Contents**
 
