@@ -1,108 +1,202 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome USER_NAME,
+<h1 align="center">Interactive Frontend Milestone 2 Project 
+<h2 align="center">Automate your Golfing experience :robot: :golf: </h2>
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Here is the deployed version on the site : 
+**[Golf Score App](https://marks530.github.io/Second-Milestone-Project-MS2/)**
 
-## Gitpod Reminders
+# **Table of Contents**
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+- [**Project Introduction**](#project-introduction)
+- [**Project Goals**](#project-goals)
+- [**User Goals**](#user-goals)
+- [**User Stories**](#user-stories)
+- [**Site Owner Goals**](#site-owner-goals)
+- [**UX**](#ux)
+- [**Design Choices**](#design-choices)
+- [**Wireframes**](#wireframes)
+- [**Features**](#features)
+	- [Features left to implement](#features-left-to-implement)       
+- [**Technologies Used**](#technologies-used)
+- [**Testing**](#testing)	
+- [**Bugs**](#bugs)
+- [**Deployment**](#deployment)
+- [**Credits**](#credits)
+	- [Content](#content)
+	- [Acknowledgements](#acknowledgements)
+- [**Footnote**](#footnote)    
+## Project Introduction
 
-`python3 -m http.server`
+Golf is played in Ireland by over 180,000 people. This is the number of registered players who are members of golf clubs. It is also played by a huge number of people who are not members of clubs and who play golf regularly. They are very often members of golf societies. Golf societies are groups of amateur/casual golfers that have been formed to enable the society members to be involved in golf tournaments without being actual members of a golf club. Usually societies are formed in a workplace or a social gathering point such as a sports club or a pub.Golf club have only recently(in the last 5 years) updated their IT systems to allow scores and golf handicaps to be collected digitally. This is a great benefit to clubs members. They can look up their scores from all of the tournaments included in the system. This service is provided by a company called [Howdidido](https://www.howdidido.com/Account/Login?returnUrl=%2f) and is so successful is hard to imagine ever being without it. This project is about replicating that service for the casual golfer. 
 
-A blue button should appear to click: _Make Public_,
+## Project Goals
 
-Another blue button should appear to click: _Open Browser_.
+The goal of the project is to provide a web based application to groups of casual golfers. The application will offer a means of collecting the scores of golf players who have just finished playing a round of golf and wish to submit their scores to calculate the winner of a competition. The player will enter their score (in golf strokes) for each golf hole and be given a total of the strokes for the round.
+As this is a project to be completed for a Milestone Project for the Code Institute the goal is to create an interactive website demonstrating this skills learn in the second phase of the course.
+The project was created using HTML CSS and JavaScript and is ready for further development. I would like very much to develop the project using the new skills that I will learn in the next stages of the course such as adding a database to store user statistics. This can be done back-end applications and using the Python language.
+## User Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+The user of the site will be initially be the organizer of the event usually the captain of the golf society. The captain will set up the event and he will then instruct the competitors to log in with their names and be taken to the score entry page.
+This method of collecting scores will give the organizer a immediate update on the players scores and information on who is leading the competition. The player who is entering his score will get a total of the number of strokes and a verification that his score has been entered on the system.
+The player can also view the leaderboard and see how they have fared in the competition.
+## User Stories
 
-A blue button should appear to click: _Make Public_,
+The user/player is introduced to the site by the event organizer.
+When the user connects to the website he/she is presented with event information. The home page contains images of the course they are playing and details of the days timetable.
 
-Another blue button should appear to click: _Open Browser_.
+When the player has finished their round they connect to the site and click in the "Score Entry" button.
+They are presented with a score card in the form of a table showing the the golf hole number, the golf hole index (which is the degree of difficulty of the each hole 1 being the most difficult) and the empty score area. The table also shows the par value for each of the golf holes which is the expected score for each hole. The par 3 holes are usually the shortest usually reachable in one shot, the 
+par 4 holes are longer and reachable in 2 shots and the par 5 holes are the longest reachable in 3 shots. 
+Above the score card the user will find the score entry area with a header showing a hole number, an increment and decrement buttons and the score entry box.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The score entry area is programmed the present the golf holes starting at hole 1 and ending at hole 9 (18 holes will introduced as the app evolves)and the score entry box will already contain the par value for the given hole and that will be the default score for each hole. 
+This application will reduce the onerous task of collating all the scores for all the players and the organizer. At the moment the application is limited in its scope and will be developed as the Full Stack course progress.
+The user enters their name and hits the "Click to enter Score button" and the name is entered above the score card. They then proceed to enter their score by using the increment/decrement buttons and clicking the submit button when the score is correct. So all the scores are entered with clicks of the mouse.
 
-To log into the Heroku toolbelt CLI:
+The answer box or score box automatically picks up the par value for each hole and enters it in the score box. Each time the submit button is clicked for a hole the score is added to hole row on the score card. At hole 9 the user is presented with an alert and a congratulations message, their name and their total number of strokes or score. 
+The players name and score are added to the leaderboard on a separate page using the web storage feature of the browser. Each player can see their position on the leaderboard.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+## Site Owner Goals
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+The site owner is getting a web application which has copied a typical score entry system used in golf clubs and is making it available to casual golfers and golf society members.  In the club environment this service is provided by Howdiddo.com and it works so well it is in constant use. 
+Scores for each golf tournament are stored and available to the user at any time. The site owner is offering an effective professional service to the casual golfer. Golfers casual or club members are hugely interested in their statistics, the score achieved,the number of points scored each round , reducing their handicap, and so on.
+All of which means that golfers players/users(the terms are all interchangeable here) are all regularly referring to the database of their statistics and thereby looking up information from the website. 
+The service is intended to be free to use with sign up and log in required. 
+In the professional environment the user is presented with stream of advertising for all sorts of golf products and services. This provides the site owner will regular users who can be exposed to relevant advertising.
+## UX
 
-------
+The home page is designed to be a relatively simple page with a Navigation bar, a hero image of the golf course and banner message with information on the event. 
+This is followed by a carousel allowing the site to show the user multiple images of the golf course. The footer will contain useful contact information.
+This page serves as an introduction to the event as all the users will already be familiar with.
+The most important element on the page is the "Score Entry" button which is a link that takes the user to the score entry page.
+The layout of the page is based on the score entry system used by HowdidIdo.com used by golf clubs and the Maths game used in the Code Institute course on Javascript demonstrated by Matt Rudge.
+This combination seemed to fit perfectly the requirements for the purpose.
+The increment/decrement buttons around the par value and the hole count keeping track of the hole number
+## Design Choice     
 
-## Release History
+The site layout contains a navigation bar, a banner image, a welcome message and event details section, a carousel with multiple images of the golf course, an information section and a footer.
+This is a simple layout which can be developed to suit many different courses throughout the country and indeed abroad
+In the center of the page is the "Score Entry" button which is the call to action for the page. This takes the user to the score entry page 
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+This page contains the business area of the site. The layout directs the user to log in and enter their score via the score entry area to appear in the score card table. The structure and layout of the score entry area is based on the Maths game used in the JavaScript course. The increment and decrement were a perfect fit for the score entry structure. The JavaScript content takes some elements from the game but is largely modified. Extra functions to get the players name, fetch the par values and present them in the score entry box, log the scores in the score card, total the numbers of strokes and add the total score to the score card 
+The leaderboard page contains a table with a column for the players names and a column for the total scores for each individual. The structure is based on the local storage property that allows access to a storage object saved across browser sessions. This accessed by functions created in both the JavaScript files on the site. The site is configured for a maximum of 9 players but can easily be extended
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+ 
+## Wireframes
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+I have in included three desktop wireframes, one for iphone and one for ipad
+Desktop Wireframes:
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/a16527227dd48bca4d76d307e7a5ad2675357ea6/wireframes/index_desktop_wireframe.png)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/a16527227dd48bca4d76d307e7a5ad2675357ea6/wireframes/score_entry_desktop_wireframe.png)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/a16527227dd48bca4d76d307e7a5ad2675357ea6/wireframes/leaderboard_desktop_wireframe.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+iPad Wireframe:
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/a16527227dd48bca4d76d307e7a5ad2675357ea6/wireframes/ipad_index_desktop_wireframe.png)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+iPhone Wireframe:
+![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/master/wireframes/score_entry_iphone.png "iPhone score entry wireframe")
+## Features
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+The site is made up of three html pages supported by a css file and two javascript files. The home page has no interactive features with the exception of a link button. The score entry page gather the players name and their score and the leaderboard page stores the player name and the total score.
+The main features of the site are the interactive score card and leaderboard which allow the user view playing statistics and those of fellow competitors.
+A carousel on the home page can show a range of images of a given course. Many more images can easily be added.
+#### Features Left to Implement 
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+As the project was implemented using only front-end interactive technologies there is plenty of scope for development by employing backend services. The app was setup with 9 holes and a limit of 9 players. It would be very easy to extend this. But the first task was to get the app to work and then to extend later. I will look at improving the user experience by experimenting with different layouts and use of buttons 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+In order to keep the user coming back to the site records of each event and associated statistics could be made available. The user could look up every time a round of golf was played and the individual scores at the time. Using the historical data a host of other useful statistics can be calculated. The user can measure their performance over time. As with similar sites relevant advertisements can be displayed to the user and an e-commerce utility could be added to the site.Using the landing page with its carousel and banner image it is possible to show multiple images of a given course and it would be a feature that could be extended over time. Templates could be set up for any number of different courses
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+## Technologies Used
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+ -   [HTML5](https://www.w3schools.com/html/)
+ -   [CSS](https://www.w3schools.com/css/default.asp)
+ -   [Javascript](https://www.javascript.com/)
+ 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+## Testing
 
-## FAQ about the uptime script
+Completed testing of all the html code at the following address [W3 Validator](https://validator.w3.org/nu/#textarea and the css.style file using the css checkbox on the same page 
+On each page I evaluated the navbar, from Desktop to Mobile, watching the behaviour of the dropdown menu on each of the different screens. I also ensured the hamburger dropdown menu was working correctly and in position once it was visible on screen.
+The hamburger element proved to be troublesome this time around as it did not work on all the pages only the landing page. I discover this was because I had used different versions of the Bootstrap CDN on each page
+During testing I discovered that on the iPad in Chrome Dev Tools the score entry section is jumbled yet it works on an iPad Pro. I was able to correct this by modifying the css rules
+Javascript code was checked on 
+  -  [jshint](https://jshint.com/)
+ 
 
-**Why have you added this script?**
+## Bugs
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+I had some issues with the bootstrap link and did not have enough time to resolve all of them
+This link was causing problems in the footer section not working to display the logos for the social media links. Using a link with version 4.7.0 fixed the problems on one of the pages. I intend to investigate this issue when more time is available.
+There is still a problem with the iphone screen size with the with the buttons overlapping somewhat.
+Unfortunately I will not have time to resolve this issue before the deployment. 
+However I do intend to get to the bottom of the matter
+Another issue is the logos for the social media links are not showing on the leaderboard and the score entry page. I will also coorect this with more time
 
-**How will this affect me?**
+[StackOverflow](https://stackoverflow.com/questions/48919200/github-pages-only-showing-readme-file) whilst trying to deploy I could only see my ReadMe on Github Pages
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Deployment
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Create Github repo 
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+add links here to deployed site 
 
-**So….?**
+  - [deployed site](https://marks530.github.io/Second-Milestone-Project-MS2/index.html)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+**CLI commands** 
 
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
+git add 
+git commit -m 
+git push 
+git status
+
+``` 
+
+## Credits 
+
+- I found [w3schools](https://www.w3schools.com//) to be extremely helpful
+
+- [css-tricks](https://css-tricks.com//) was another site I found to be useful
+
+- [Bootstrap 4](https://getbootstrap.com/docs/4.1/components/) documents proved to be 
+
+- [Javascript docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+
+
+The structure of the Maths game proved to be ideal for the score entry system I needed for the site so this area  is based on that game. So credit to Matt Rudge for that
+The score card and leaderboard are based on the tables found in the Jquery section of the course 
+## Content
+
+The image used in the site are almost all my own with the exception of one image taken from 
+ - [golf images](https://unsplash.com/s/photos/golf)
+
+**Code Snippet Example - continue**
+
+```javascript
+
+function saveScores() {
+    let scores = localStorage.getItem(LOCAL_STORAGE_GAME_SCORES);
+    if (!scores)
+        scores = JSON.stringify({}); //JSON.stringify convert Javascript objet to a JSON object
+    let scoresObject = JSON.parse(scores); //JSON.parse convert JSON objet to a Javascript object
+    let name = document.getElementById('name').value;
+    scoresObject[name] = getArrayTotal();
+    localStorage.setItem(LOCAL_STORAGE_GAME_SCORES, JSON.stringify(scoresObject))
+}
+
 ```
 
-**Anything more?**
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Footnote
 
----
-
-Happy coding!
+I found this project challenging and very time consuming. I spent the vast bulk of the time writing and testing my JavaScript code and that was at the expense of the look and feel of the site. I intend to work on the project in the coming weeks while it is still fresh in my mind.
+Nevertheless I found the whole project both fascinating and in the end had a real sense of achievement 
