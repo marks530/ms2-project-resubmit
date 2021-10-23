@@ -26,7 +26,8 @@ Here is the deployed version on the site :
 - [**Credits**](#credits)
 	- [Content](#content)
 	- [Acknowledgements](#acknowledgements)
-- [**Footnote**](#footnote)    
+- [**Footnote**](#footnote)
+    
 ## Project Introduction
 
 Golf is played in Ireland by over 180,000 people. This is the number of registered players who are members of golf clubs. It is also played by a huge number of people who are not members of clubs and who play golf regularly. They are very often members of golf societies. Golf societies are groups of amateur/casual golfers that have been formed to enable the society members to be involved in golf tournaments without being actual members of a golf club. Usually societies are formed in a workplace or a social gathering point such as a sports club or a pub.Golf club have only recently(in the last 5 years) updated their IT systems to allow scores and golf handicaps to be collected digitally. This is a great benefit to clubs members. They can look up their scores from all of the tournaments included in the system. This service is provided by a company called [Howdidido](https://www.howdidido.com/Account/Login?returnUrl=%2f) and is so successful is hard to imagine ever being without it. This project is about replicating that service for the casual golfer. 
@@ -155,6 +156,8 @@ Javascript code was checked on
 
 ## Bugs
 
+The bootstrap class 'table-responsive' was required to correct the display of the leaderboard card on the 
+leaderboard page. The problem only occurred on an iphone 6 and made the leaderboard card spill onto the div directly below. This meant that a slider control appeared at the side of the leaderboard card and its use is required to see the full cars
 I had some issues with the bootstrap link and did not have enough time to resolve all of them
 This link was causing problems in the footer section not working to display the logos for the social media links. Using a link with version 4.7.0 fixed the problems on one of the pages. I intend to investigate this issue when more time is available.
 There is still a problem with the iphone screen size with the with the buttons overlapping somewhat.
