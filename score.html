@@ -23,7 +23,7 @@
                 <!--Navbar with hamburger element-->
                 <nav class="navbar navbar-custom navbar-expand-lg
                         navbar-light bg-light container">
-                    <a class="navbar-brand">Graduate Society Golf Outing</a>
+                    <a class="navbar-brand">Seapoint Society Golf Outing</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle
                             navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
             </div>
             <section>
                 <div class="jumbotron text-center">
-                    <h1 class="uppercase"> Graduate Society Summer Golf Outing!<br>Score Card
+                    <h1 class="uppercase"> Seapoint Society Golf Outing<br>Score Card
                     </h1>
 
                 </div>
@@ -62,18 +62,20 @@
             <form class="log-in">
                 <div class="form-group">
                     <label for="name" text="uppercase">NAME</label>
-                    <input type="name" class="form-control" id="name" aria-describedby="name" placeholder="Enter full name">
+                    <input type="name" style="text-transform: uppercase;" class="form-control" id="name" aria-describedby="name" placeholder="Enter full name">
                 </div>
 
-                <button id="login" type="button" onclick="refreshBoard()" class="btn btn-primary">Click to enter your
+                <button id="login" type="button" onclick="validate()" class="btn btn-primary">Click to enter your
                 score
             </button>
             </form>
         </div>
         <!--header-->
-        <h1 class="heading">
-            <img src="images/golf_ball_logo1.jpg" alt="golf ball logo" class="logo"> Score Entry for each Golf Hole
-        </h1>
+        <div class="score-header">
+            <h1 class="heading">
+                <img src="images/golf_ball_logo1.jpg" alt="golf ball logo" class="logo">Score Entry
+            </h1>
+        </div>
         <!---Score entry Section with buttons-->
         <div class="score-entry">
             <div class="score-area">

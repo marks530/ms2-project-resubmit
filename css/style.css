@@ -37,13 +37,26 @@
         margin-bottom: 30px;
         padding: 1%;
     }
+
+    .score-header {
+        background-color: #f4f0ec;
+        box-sizing: border-box;
+        width: 85%;
+        height: 65vh;
+        max-height: 10px;
+        max-width: 930px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        padding: 1%;
+    }
     
     .score-entry {
         background-color: #f4f0ec;
         box-sizing: border-box;
         width: 85%;
         height: 65vh;
-        max-height: 550px;
+        max-height: 450px;
         max-width: 930px;
         margin-left: auto;
         margin-right: auto;
@@ -56,16 +69,30 @@
         box-sizing: border-box;
         width: 85%;
         height: 65vh;
-        max-height: 650px;
+        max-height: 590px;
         max-width: 930px;
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 30px;
         padding: 1%;
     }
+
+    .leaderboard {
+        background-color: #f4f0ec;
+        box-sizing: border-box;
+        width: 85%;
+        height: 65vh;
+        max-height: 450px;
+        max-width: 930px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 1%;
+    }
     
     .score-area {
-        margin: 100px auto;
+        margin: 50px auto;
         width: 90%;
         font-size: 1.2rem;
     }
@@ -119,9 +146,10 @@
         margin: 0 30px;
         transition: all 0.5s;
     }
+
+    /*---Remove content: attr(data-type)---*/
     
     .btn--big::after {
-        content: attr(data-type);
         font-size: 1rem;
         color: #347dc0;
         position: relative;
@@ -239,9 +267,7 @@
         .btn--big {
             margin: 10px 10px;
         }
-        .question-area {
-            padding: 10px 0;
-        }
+        
     }
     /* ----------- table styling  */
     
@@ -282,7 +308,7 @@
     
     .golf-course-info .info-inner {
         border: 4px solid #000000a5;
-        background-color: rgba(44, 204, 151, 0.138);
+        background-color: #f4f0ec;
         margin-bottom: 30px;
     }
     /*.. golf course info ..*/

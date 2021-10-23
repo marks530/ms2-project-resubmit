@@ -31,11 +31,29 @@ document.addEventListener("DOMContentLoaded", init);
 
 //Function to get the players name and enter it at the top of the score card
 function getInputValue() {
-    return document.getElementById("name").value
+    let res = document.getElementById("name").value;
+    return res.toUpperCase()
+}
+
+// First name and last name validation
+
+function validate() {
+    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    var name = document.getElementById('name').value;
+    if (!regName.test(name)) {
+        alert('Please enter your full name (first & last name).');
+        document.getElementById('name').focus();
+        return false;
+    } else {
+        alert('Valid name given.');
+        document.getElementById("player-name").innerHTML = getInputValue();
+        //refreshBoard();
+        return true;
+    }
 }
 
 function refreshBoard() {
-    init();
+    //init();
     for (let i = 0; i < 9; i++)
         document.getElementById('result' + i).innerHTML = "";
     document.getElementById('total-score').innerHTML = "";
@@ -79,7 +97,8 @@ function saveScores() {
     if (!scores)
         scores = JSON.stringify({}); //JSON.stringify convert Javascript objet to a JSON object
     let scoresObject = JSON.parse(scores); //JSON.parse convert JSON objet to a Javascript object
-    let name = document.getElementById('name').value;
+    let name = getInputValue();
+    //document.getElementById('name').value;
     scoresObject[name] = getArrayTotal();
     localStorage.setItem(LOCAL_STORAGE_GAME_SCORES, JSON.stringify(scoresObject))
 }
@@ -103,7 +122,7 @@ btn.onclick = function() {
     } else {
 
         alert("Congratulations, " + getInputValue() + " you got a total of " + getArrayTotal() +
-            ".  Go to the Leaderboard page to check your score");
+            ".  Go to the Leaderboard page to check your score on the Leaderboard table");
         displayTotal();
         saveScores();
         init();
