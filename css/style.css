@@ -1,0 +1,329 @@
+    /* --------- Global style */
+    
+    body {
+        background-color: white;
+        font-family: "Raleway", sans-serif;
+        color: #445361;
+        text-align: center;
+    }
+    /* --------- Heading */
+    
+    .heading {
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    
+    .logo {
+        height: 40px;
+        padding-right: 5px;
+        padding-top: 2px;
+    }
+    
+    .main-banner {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    /* ------- Score Entry Layout */
+    
+    .log-in {
+        background-color: #f4f0ec;
+        box-sizing: border-box;
+        width: 85%;
+        height: 65vh;
+        max-height: 210px;
+        max-width: 930px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        padding: 1%;
+    }
+    
+    .score-entry {
+        background-color: #f4f0ec;
+        box-sizing: border-box;
+        width: 85%;
+        height: 65vh;
+        max-height: 550px;
+        max-width: 930px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        padding: 1%;
+    }
+    
+    .score-card {
+        background-color: #f4f0ec;
+        box-sizing: border-box;
+        width: 85%;
+        height: 65vh;
+        max-height: 650px;
+        max-width: 930px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        padding: 1%;
+    }
+    
+    .score-area {
+        margin: 100px auto;
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    
+    #score {
+        color: green;
+        font-weight: bold;
+    }
+    
+    .answer-message {
+        display: none;
+        font-size: 1rem;
+    }
+    
+    #answer-box {
+        border: none;
+        color: #445361;
+        display: inline-block;
+        height: 60px;
+        width: 100px;
+        font-size: 1.8rem;
+    }
+    
+    .scores {
+        display: inline-block;
+        padding: 25px;
+    }
+    /* ---- Buttons ----*/
+    
+    .btn {
+        width: 220px;
+        height: 60px;
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        color: white;
+    }
+    
+    .btn:focus {
+        outline: none;
+    }
+    
+    .btn--big {
+        padding-top: 10px;
+        border-radius: 50%;
+        background-color: white;
+        border: 10px solid;
+        width: 100px;
+        height: 100px;
+        font-size: 3.2rem;
+        margin: 0 30px;
+        transition: all 0.5s;
+    }
+    
+    .btn--big::after {
+        content: attr(data-type);
+        font-size: 1rem;
+        color: #347dc0;
+        position: relative;
+        left: -0.5em;
+    }
+    
+    .btn--blue {
+        border-color: blue;
+        color: blue;
+    }
+    
+    .btn--blue:active,
+    .btn--blue:hover {
+        background-color: rgb(31, 31, 228);
+        color: white;
+    }
+    
+    .btn--orange {
+        border-color: orange;
+        color: orange;
+    }
+    
+    .btn--orange:active,
+    .btn--orange:hover {
+        background-color: darkorange;
+        color: white;
+    }
+    
+    .btn--red {
+        border-color: red;
+        color: red;
+    }
+    
+    .btn--red:active,
+    .btn--red:hover {
+        background-color: rgb(168, 30, 30);
+        color: white;
+    }
+    
+    .btn--green {
+        border-color: green;
+        color: green;
+    }
+    
+    .btn--green:active,
+    .btn--green:hover {
+        background-color: darkgreen;
+        color: white;
+    }
+    
+    .btn--gray {
+        margin-top: 25px;
+        background-color: #445361;
+        border: 1px transparent;
+        border-radius: 20px;
+    }
+    
+    .btn--gray:active,
+    .btn--gray:hover {
+        background-color: #3e83c8;
+    }
+    
+    input {
+        text-align: center;
+    }
+    /* --------- Media queries */
+    
+    @media (max-width: 414px) {
+        .score-area {
+            width: 100%;
+        }
+        .btn--big {
+            margin: 0 10px;
+            padding: 5px;
+            border: 5px solid;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+        }
+        .btn--big::after {
+            font-size: 0.6rem;
+            left: -0.7rem;
+        }
+        .answer-message {
+            display: block;
+        }
+        #answer-box {
+            display: block;
+            margin: 0 auto;
+        }
+        .btn--gray {
+            margin-top: 0;
+        }
+        .score-area {
+            width: 100%;
+        }
+        .scores {
+            margin: 0.5em auto;
+            display: block;
+            padding: 5px;
+        }
+        .heading {
+            font-size: 2rem;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .score-entry {
+            height: 70vh;
+        }
+        .score-area {
+            width: 75%;
+            margin: 10px auto;
+        }
+        .btn--big {
+            margin: 10px 10px;
+        }
+        .question-area {
+            padding: 10px 0;
+        }
+    }
+    /* ----------- table styling  */
+    
+    table.score-table {
+        width: 100%;
+    }
+    
+    td,
+    th {
+        width: 7rem;
+        height: 2.5rem;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+    
+    th {
+        background: #48bcf3;
+        border-color: white;
+    }
+    
+    th.highlight {
+        background: lightblue;
+        border-color: white;
+    }
+    
+    body {
+        padding: 1rem;
+        font-family: Roboto;
+    }
+    /*.. slider ..*/
+    
+    .img-slider img {
+        height: 300px;
+        object-fit: cover;
+    }
+    /*.. slider ..*/
+    /*.. golf course info ..*/
+    
+    .golf-course-info .info-inner {
+        border: 4px solid #000000a5;
+        background-color: rgba(44, 204, 151, 0.138);
+        margin-bottom: 30px;
+    }
+    /*.. golf course info ..*/
+    /*----------------------------------Footer */
+    
+    footer {
+        background-color: #525252;
+        color: #fafafa;
+        min-height: 120px;
+        margin: 0;
+    }
+    
+    .inline-block {
+        display: inline-block;
+    }
+    
+    .social-links {
+        padding-bottom: 15px;
+    }
+    
+    .social-links li a i {
+        width: 32px;
+        height: 32px;
+        padding: 12px 0;
+        border-radius: 50%;
+        font-size: 13px;
+        line-height: 7px;
+        text-align: center;
+        color: #fafafa;
+        background: #8f8f8f;
+        transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+    }
+    
+    .social-links li a i:hover {
+        background: #e84610;
+    }
+    
+    #footer-details {
+        padding: 15px;
+    }
+    /*-----New Footer---------*/
