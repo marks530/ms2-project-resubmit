@@ -84,6 +84,7 @@ Scores for each golf tournament are stored and available to the user at any time
 All of which means that golfers players/users(the terms are all interchangeable here) are all regularly referring to the database of their statistics and thereby looking up information from the website. 
 The service is intended to be free to use with sign up and log in required. 
 In the professional environment the user is presented with stream of advertising for all sorts of golf products and services. This provides the site owner will regular users who can be exposed to relevant advertising.
+
 ## UX
 
 The home page is designed to be a relatively simple page with a Navigation bar, a hero image of the golf course and banner message with information on the event. 
@@ -92,7 +93,8 @@ This page serves as an introduction to the event as all the users will already b
 The most important element on the page is the "Score Entry" button which is a link that takes the user to the score entry page.
 The layout of the page is based on the score entry system used by HowdidIdo.com used by golf clubs and the Maths game used in the Code Institute course on Javascript demonstrated by Matt Rudge.
 This combination seemed to fit perfectly the requirements for the purpose.
-The increment/decrement buttons around the par value and the hole count keeping track of the hole number
+The increment/decrement buttons around the par value and the hole count keeping track of the hole number.
+
 ## Design Choice     
 
 The site layout contains a navigation bar, a banner image, a welcome message and event details section, a carousel with multiple images of the golf course, an information section and a footer.
@@ -108,23 +110,25 @@ The leaderboard page contains a table with a column for the players names and a 
 I have in included three desktop wireframes, one for iphone and one for ipad
 Desktop Wireframes:
 
-![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/a16527227dd48bca4d76d307e7a5ad2675357ea6/wireframes/index_desktop_wireframe.png)
+![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/index_desktop_wireframe.png)
 
-![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/a16527227dd48bca4d76d307e7a5ad2675357ea6/wireframes/score_entry_desktop_wireframe.png)
+![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/score_entry_desktop_wireframe.png)
 
-![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/a16527227dd48bca4d76d307e7a5ad2675357ea6/wireframes/leaderboard_desktop_wireframe.png)
+![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/leaderboard_desktop_wireframe.png)
 
 iPad Wireframe:
 
-![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/a16527227dd48bca4d76d307e7a5ad2675357ea6/wireframes/ipad_index_desktop_wireframe.png)
+![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/ipad_index_desktop_wireframe.png)
 
 iPhone Wireframe:
-![alt text](https://github.com/marks530/Second-Milestone-Project-MS2/blob/master/wireframes/score_entry_iphone.png "iPhone score entry wireframe")
+![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/score_entry_iphone.png)
+
 ## Features
 
 The site is made up of three html pages supported by a css file and two javascript files. The home page has no interactive features with the exception of a link button. The score entry page gather the players name and their score and the leaderboard page stores the player name and the total score.
 The main features of the site are the interactive score card and leaderboard which allow the user view playing statistics and those of fellow competitors.
 A carousel on the home page can show a range of images of a given course. Many more images can easily be added.
+
 #### Features Left to Implement 
 
 As the project was implemented using only front-end interactive technologies there is plenty of scope for development by employing backend services. The app was setup with 9 holes and a limit of 9 players. It would be very easy to extend this. But the first task was to get the app to work and then to extend later. I will look at improving the user experience by experimenting with different layouts and use of buttons 
