@@ -51,6 +51,25 @@ They are presented with a score card in the form of a table showing the the golf
 par 4 holes are longer and reachable in 2 shots and the par 5 holes are the longest reachable in 3 shots. 
 Above the score card the user will find the score entry area with a header showing a hole number, an increment and decrement buttons and the score entry box.
 
+When the player has finished playing their golf round they connect to the site and click in the "Score Entry" button.
+The Score Entry process is as follows
+
+* the user signs in to the event using their full Name
+* the name is validated for alpha characters only and is capitalized for clarity
+* if the name is the in the correct format ie first name and last name a valid entry message is shown
+* if the name is not the correct format a message to reenter a valid name appears
+* when the user clicks to clear the valid entry message their name is entered at the top of the score card
+* the user then moves to the score entry area to enter their score
+* the score entry area has three buttons, score increment, score decrement and score submit
+* there is also a header showing which hole number is being entered
+* the score entry area also has a score box which is automatically filled with the par value of the given Hole
+* this par value is taken from the score card and is updated for each hole as the golfer steps through the score card
+* the user enters the score for each hole by incrementing or decrementing from the par and clicks the submit button
+* when the user clicks the submit button for the first hole the score for that hole is entered in the score card below the score area
+* then the hole number is incremented automatically and the par value for that hole is presented in the answer box
+* the user enters the score for nine holes and is congratulated and given a message showing the total numbers of strokes
+* the total is entered at the total row on the score card along with the scores for each hole
+
 The score entry area is programmed the present the golf holes starting at hole 1 and ending at hole 9 (18 holes will introduced as the app evolves)and the score entry box will already contain the par value for the given hole and that will be the default score for each hole. 
 This application will reduce the onerous task of collating all the scores for all the players and the organizer. At the moment the application is limited in its scope and will be developed as the Full Stack course progress.
 The user enters their name and hits the "Click to enter Score button" and the name is entered above the score card. They then proceed to enter their score by using the increment/decrement buttons and clicking the submit button when the score is correct. So all the scores are entered with clicks of the mouse.
