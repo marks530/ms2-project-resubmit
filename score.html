@@ -48,7 +48,7 @@
 
             </div>
             <section>
-                <div class="jumbotron text-center">
+                <div class="container text-center">
                     <h1 class="uppercase">Seapoint Society Golf Outing<br>Score Card
                     </h1>
 
@@ -61,8 +61,8 @@
         <div class="container">
             <form class="log-in">
                 <div class="form-group">
-                    <label for="name" text="uppercase">NAME</label>
-                    <input type="name" style="text-transform: uppercase;" class="form-control" id="name" aria-describedby="name" placeholder="Enter full name">
+                    <label for="name">NAME</label>
+                    <input type="text" style="text-transform: uppercase;" class="form-control" id="name" aria-describedby="name" placeholder="Enter full name">
                 </div>
 
                 <button id="login" type="button" onclick="validate()" class="btn btn-primary">Click to enter your
@@ -90,12 +90,14 @@
 
                 <button data-type="decrement" class="btn btn--big btn--blue">
                 <i class="fas fa-minus"></i>
-        </div>
-
-        <button id="submitBtn" data-type="submit" class="btn btn--gray">Submit
-            Score
-        </button>
+            </button>
+            
             </div>
+
+            <button id="submitBtn" data-type="submit" class="btn btn--gray">Submit
+                Score
+            </button>
+        </div>
             <!--Score Card Section-->
             <div class="score-card table-responsive">
                 <h2 id="player-name">Player Name</h2>
