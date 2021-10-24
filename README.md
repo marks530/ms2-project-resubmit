@@ -220,10 +220,15 @@ The result from the score.html page
 
 ![score validation check](https://marks530.github.io/ms2-project-resubmit/images/score.html_validation_report.jpeg)
 
+All the errorss were investigated and resolved as shown in the image below. A single warning remained and was deemed necessary to leave in place.
+
+[Score validation result](https://marks530.github.io/ms2-project-resubmit/images/score.html_validation_result.jpeg)
+
 The result from the leaderboard.html page
 
 ![leaderboard validation check](https://marks530.github.io/ms2-project-resubmit/images/leaderboard.html_validation.jpeg)
 
+All the problems and warning were investigated and resolved as shown in the image below.
 
 On each page I evaluated the navbar, from Desktop to Mobile, watching the behaviour of the dropdown menu on each of the different screens. I also ensured the hamburger dropdown menu was working correctly and in position once it was visible on screen.
 The hamburger element proved to be troublesome this time around as it did not work on all the pages only the landing page. I discover this was because I had used different versions of the Bootstrap CDN on each page
@@ -290,7 +295,7 @@ git status
 
 The structure of the Maths game proved to be ideal for the score entry system I needed for the site so this area  is based on that game. So credit to Matt Rudge for that
 The score card and leaderboard are based on the tables found in the Jquery section of the course.
- 
+
 ## Content
 
 The image used in the site are almost all my own with the exception of one image taken from 
