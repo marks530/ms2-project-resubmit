@@ -146,9 +146,32 @@ In order to keep the user coming back to the site records of each event and asso
 
 ## Testing
 
-Completed testing of all the html code at the following address [W3 Validator](https://validator.w3.org/nu/#textarea and the css.style file using the css checkbox on the same page 
+Completed testing of all the html code at the following address
+ -  [W3 Validator](https://validator.w3.org/nu/#textarea) 
+ and the css.style file using the css checkbox on the same page 
+ The results of the first validation checks are shown below
+ The result from the index.html page
+
+ ![index validation check](https://marks530.github.io/ms2-project-resubmit/images/index.html_validation_check.jpeg)
+
+ All the problems and waring were investigated and resolved as shown in the image below.
+
+ ![index pass validation](https://marks530.github.io/ms2-project-resubmit/images/validation_pass_index_page.jpeg)
+
+The result from the score.html page
+
+![score validation check](https://marks530.github.io/ms2-project-resubmit/images/score.html_validation_report.jpeg)
+
+The result from the leaderboard.html page
+
+![leaderboard validation check](https://marks530.github.io/ms2-project-resubmit/images/leaderboard.html_validation.jpeg)
+
+
 On each page I evaluated the navbar, from Desktop to Mobile, watching the behaviour of the dropdown menu on each of the different screens. I also ensured the hamburger dropdown menu was working correctly and in position once it was visible on screen.
 The hamburger element proved to be troublesome this time around as it did not work on all the pages only the landing page. I discover this was because I had used different versions of the Bootstrap CDN on each page
+Creating the image background for all the pages proved to be very difficult. The Chrome Dev tools did help to identify the problem. For some unknown reason the browser inserted another
+directory level into the file path by placing the images folder inside the css folder.
+
 During testing I discovered that on the iPad in Chrome Dev Tools the score entry section is jumbled yet it works on an iPad Pro. I was able to correct this by modifying the css rules
 Javascript code was checked on 
   -  [jshint](https://jshint.com/)
