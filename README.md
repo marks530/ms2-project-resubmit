@@ -220,7 +220,7 @@ The result from the score.html page
 
 ![score validation check](https://marks530.github.io/ms2-project-resubmit/images/score.html_validation_report.jpeg)
 
-All the errorss were investigated and resolved as shown in the image below. A single warning remained and was deemed necessary to leave in place.
+All the errors were investigated and resolved as shown in the image below. A single warning remained and was deemed necessary to leave in place.
 
 [Score validation result](https://marks530.github.io/ms2-project-resubmit/images/score.html_validation_result.jpeg)
 
