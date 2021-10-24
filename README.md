@@ -158,6 +158,30 @@ iPhone Wireframe:
 The site is made up of three html pages supported by a css file and two javascript files. The home page has no interactive features with the exception of a link button. The score entry page gather the players name and their score and the leaderboard page stores the player name and the total score.
 The main features of the site are the interactive score card and leaderboard which allow the user view playing statistics and those of fellow competitors.
 A carousel on the home page can show a range of images of a given course. Many more images can easily be added.
+The site uses the browsers Window.localStorage Web API to store the player and the scores data
+
+```
+The localStorage properties allow to save key/value pairs in a web browser. The localStorage object stores data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year. The localStorage property is read-only.
+
+```
+During testing it was necessary to clear the local storage and this done in the dev tools of the browser.
+
+
+**Code Snippet Example - Local Storage**
+
+```javascript
+
+function saveScores() {
+    let scores = localStorage.getItem(LOCAL_STORAGE_GAME_SCORES);
+    if (!scores)
+        scores = JSON.stringify({}); //JSON.stringify convert Javascript objet to a JSON object
+    let scoresObject = JSON.parse(scores); //JSON.parse convert JSON objet to a Javascript object
+    let name = document.getElementById('name').value;
+    scoresObject[name] = getArrayTotal();
+    localStorage.setItem(LOCAL_STORAGE_GAME_SCORES, JSON.stringify(scoresObject))
+}
+
+```
 
 #### Features Left to Implement 
 
@@ -236,7 +260,7 @@ add links here to deployed site
 
 
 
-This project was built vscode and initially tested using the Live Preview option 
+This project was built VSCode and initially tested using the Live Preview option 
 
 
 This site is hosted using GitHub. My code was directly deployed from the master branch. I added, committed and pushed my updates via the terminal as often as possible. I then deployed the site automatically upon receiving the new commits to the master branch/source. The following commands were used for Github deployment:
@@ -270,21 +294,7 @@ The score card and leaderboard are based on the tables found in the Jquery secti
 The image used in the site are almost all my own with the exception of one image taken from 
  - [golf images](https://unsplash.com/s/photos/golf)
 
-**Code Snippet Example - continue**
 
-```javascript
-
-function saveScores() {
-    let scores = localStorage.getItem(LOCAL_STORAGE_GAME_SCORES);
-    if (!scores)
-        scores = JSON.stringify({}); //JSON.stringify convert Javascript objet to a JSON object
-    let scoresObject = JSON.parse(scores); //JSON.parse convert JSON objet to a Javascript object
-    let name = document.getElementById('name').value;
-    scoresObject[name] = getArrayTotal();
-    localStorage.setItem(LOCAL_STORAGE_GAME_SCORES, JSON.stringify(scoresObject))
-}
-
-```
 
 
 ## Footnote
