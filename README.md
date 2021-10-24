@@ -166,6 +166,7 @@ The localStorage properties allow to save key/value pairs in a web browser. The 
 ```
 During testing it was necessary to clear the local storage and this done in the dev tools of the browser.
 
+![Dev Tools clear Local Storage](https://marks530.github.io/ms2-project-resubmit/images/local_storage.jpeg)
 
 **Code Snippet Example - Local Storage**
 
@@ -196,7 +197,7 @@ In order to keep the user coming back to the site records of each event and asso
  -   [HTML5](https://www.w3schools.com/html/)
  -   [CSS](https://www.w3schools.com/css/default.asp)
  -   [Javascript](https://www.javascript.com/)
- 
+ -   [Window.localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
 
 
 ## Testing
@@ -288,7 +289,8 @@ git status
 
 
 The structure of the Maths game proved to be ideal for the score entry system I needed for the site so this area  is based on that game. So credit to Matt Rudge for that
-The score card and leaderboard are based on the tables found in the Jquery section of the course 
+The score card and leaderboard are based on the tables found in the Jquery section of the course.
+ 
 ## Content
 
 The image used in the site are almost all my own with the exception of one image taken from 
@@ -299,5 +301,5 @@ The image used in the site are almost all my own with the exception of one image
 
 ## Footnote
 
-I found this project challenging and very time consuming. I spent the vast bulk of the time writing and testing my JavaScript code and that was at the expense of the look and feel of the site. I intend to work on the project in the coming weeks while it is still fresh in my mind.
+I found this project challenging and very time consuming. I spent the vast bulk of the time writing and testing my JavaScript code and that was at the expense of the look and feel of the site. However for the resubmission I feel I have improved the look and feel of the site. I intend to work on the project in the future and continue to add features.
 Nevertheless I found the whole project both fascinating and in the end had a real sense of achievement 
