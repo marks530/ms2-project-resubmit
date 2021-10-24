@@ -291,6 +291,14 @@ git status
 
 - [Javascript docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
+Thanks to Codexworld for Javascript name validation code
+
+- [Codexworld](https://www.codexworld.com/how-to/validate-first-last-name-with-regular-expression-using-javascript/)
+
+Thanks to MDN Web docs for documentation on using Window.localStorage
+
+- [Mozilla MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+
 
 
 The structure of the Maths game proved to be ideal for the score entry system I needed for the site so this area  is based on that game. So credit to Matt Rudge for that
@@ -306,5 +314,5 @@ The image used in the site are almost all my own with the exception of one image
 
 ## Footnote
 
-I found this project challenging and very time consuming. I spent the vast bulk of the time writing and testing my JavaScript code and that was at the expense of the look and feel of the site. However for the resubmission I feel I have improved the look and feel of the site. I intend to work on the project in the future and continue to add features.
-Nevertheless I found the whole project both fascinating and in the end had a real sense of achievement 
+I found this project challenging and very time consuming. I spent the vast bulk of the time writing and testing my JavaScript code and that was at the expense of the look and feel of the site. However for the resubmission, I have improved the look and feel of the site. I intend to work on the project in the future and continue to add features.
+In summary, I found the whole project both fascinating and in the end had a real sense of achievement 
