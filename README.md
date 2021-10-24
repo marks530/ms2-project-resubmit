@@ -231,6 +231,11 @@ The result from the leaderboard.html page
 All the problems and warning were investigated and resolved as shown in the image below.
 
 On each page I evaluated the navbar, from Desktop to Mobile, watching the behaviour of the dropdown menu on each of the different screens. I also ensured the hamburger dropdown menu was working correctly and in position once it was visible on screen.
+Testing of the site was done on an iMac using Chrome, Safari and Firefox and checking the iPad and iPhone views in Dev Tools.
+On a PC running Windows testing was done with the Chrome, Microsort Edge and Firefox browsers
+
+The biggest challenge was to maintain the shape and the responsiveness across all devices.
+I tried using a sticky footer but that didn't work. The answer was to add the class of table-responsive to the scorecard and the leaderboard tables. This meant that on some screens the user would have to scroll to view all the tables.
 The hamburger element proved to be troublesome this time around as it did not work on all the pages only the landing page. I discover this was because I had used different versions of the Bootstrap CDN on each page
 Creating the image background for all the pages proved to be very difficult. The Chrome Dev tools did help to identify the problem. For some unknown reason the browser inserted another
 directory level into the file path by placing the images folder inside the css folder.
