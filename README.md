@@ -122,12 +122,13 @@ This combination seemed to fit perfectly the requirements for the purpose.
 The answer box or score box fetches the par value from the scorecard for the hole and the users clicks
 the increment/decrement buttons around the par value to get their score quickly.
 The Submit button takes the entry and saves it to the scorecard.
-When the limit 
+When the limit of nine holes the congratulations message appears with the score total and the user is invited to see their entry on the leaderboard page.
 
 ## Design Choice     
 
 The site layout contains a navigation bar, a banner image, a welcome message and event details section, a carousel with multiple images of the golf course, an information section and a footer.
-This is a simple layout which can be developed to suit many different courses throughout the country and indeed abroad
+I have improved a number of areas of the site by adding a background image which is an image taken from the golf course and changing the jumbotrons to containers with the effect of removing the background colour and presenting the headers and section titles directly on the background image.
+This layout can be developed to suit many different courses throughout the country and indeed abroad
 In the center of the page is the "Score Entry" button which is the call to action for the page. This takes the user to the score entry page. 
 
 This page contains the business area of the site. The layout directs the user to log in and enter their score via the score entry area to appear in the score card table. The structure and layout of the score entry area is based on the Maths game used in the JavaScript course. The increment and decrement were a perfect fit for the score entry structure. The JavaScript content takes some elements from the game but is largely modified. Extra functions to get the players name, fetch the par values and present them in the score entry box, log the scores in the score card, total the numbers of strokes and add the total score to the score card 
@@ -161,7 +162,8 @@ A carousel on the home page can show a range of images of a given course. Many m
 #### Features Left to Implement 
 
 As the project was implemented using only front-end interactive technologies there is plenty of scope for development by employing backend services. The app was setup with 9 holes and a limit of 9 players. It would be very easy to extend this. But the first task was to get the app to work and then to extend later. I will look at improving the user experience by experimenting with different layouts and use of buttons.
-I would like to have the score entry and the buttons hidden until the name had been entered but I will implement this at a later date. 
+I would like to have the score entry and the buttons hidden until the name had been entered but I will implement this at a later date.
+Another feature I would like to implement is to have leaderboard change with each new entry and list the players according to their scores.
 
 In order to keep the user coming back to the site records of each event and associated statistics could be made available. The user could look up every time a round of golf was played and the individual scores at the time. Using the historical data a host of other useful statistics can be calculated. The user can measure their performance over time. As with similar sites relevant advertisements can be displayed to the user and an e-commerce utility could be added to the site.Using the landing page with its carousel and banner image it is possible to show multiple images of a given course and it would be a feature that could be extended over time. Templates could be set up for any number of different courses
 
@@ -176,14 +178,16 @@ In order to keep the user coming back to the site records of each event and asso
 ## Testing
 
 Completed testing of all the html code at the following address
+
  -  [W3 Validator](https://validator.w3.org/nu/#textarea) 
+
  and the css.style file using the css checkbox on the same page 
  The results of the first validation checks are shown below
  The result from the index.html page
 
  ![index validation check](https://marks530.github.io/ms2-project-resubmit/images/index.html_validation_check.jpeg)
 
- All the problems and waring were investigated and resolved as shown in the image below.
+ All the problems and warning were investigated and resolved as shown in the image below.
 
  ![index pass validation](https://marks530.github.io/ms2-project-resubmit/images/validation_pass_index_page.jpeg)
 
@@ -203,6 +207,7 @@ directory level into the file path by placing the images folder inside the css f
 
 During testing I discovered that on the iPad in Chrome Dev Tools the score entry section is jumbled yet it works on an iPad Pro. I was able to correct this by modifying the css rules
 Javascript code was checked on 
+
   -  [jshint](https://jshint.com/)
 
   The code check identified 2 missing semicolons which were corrected. The code check also identified a number of unused variables one of which was a function definitely in use so I was reluctant to change these elements.
@@ -212,11 +217,10 @@ Javascript code was checked on
 ## Bugs
 
 The bootstrap class 'table-responsive' was required to correct the display of the leaderboard card on the 
-leaderboard page. The problem only occurred on an iphone 6 and made the leaderboard card spill onto the div directly below. This meant that a slider control appeared at the side of the leaderboard card and its use is required to see the full cars
+leaderboard page. The problem only occurred on an iphone 6 and made the leaderboard card spill onto the div directly below. This meant that a slider control appeared at the side of the leaderboard card and its use is required to see the full score card. 
 I had some issues with the bootstrap link and did not have enough time to resolve all of them
 This link was causing problems in the footer section not working to display the logos for the social media links. Using a link with version 4.7.0 fixed the problems on one of the pages. I intend to investigate this issue when more time is available.
-There is still a problem with the iphone screen size with the with the buttons overlapping somewhat.
-Unfortunately I will not have time to resolve this issue before the deployment. 
+
 However I do intend to get to the bottom of the matter
 Another issue is the logos for the social media links are not showing on the leaderboard and the score entry page. I will also coorect this with more time
 
@@ -228,8 +232,14 @@ Create Github repo
 
 add links here to deployed site 
 
-  - [deployed site](https://marks530.github.io/Second-Milestone-Project-MS2/index.html)
+  - [deployed site](https://marks530.github.io/ms2-project-resubmit/index.html)
 
+
+
+This project was built vscode and initially tested using the Live Preview option 
+
+
+This site is hosted using GitHub. My code was directly deployed from the master branch. I added, committed and pushed my updates via the terminal as often as possible. I then deployed the site automatically upon receiving the new commits to the master branch/source. The following commands were used for Github deployment:
 
 **CLI commands** 
 
