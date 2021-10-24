@@ -254,10 +254,8 @@ Javascript code was checked on
 The bootstrap class 'table-responsive' was required to correct the display of the leaderboard card on the 
 leaderboard page. The problem only occurred on an iphone 6 and made the leaderboard card spill onto the div directly below. This meant that a slider control appeared at the side of the leaderboard card and its use is required to see the full score card. 
 I had some issues with the bootstrap link and did not have enough time to resolve all of them
-This link was causing problems in the footer section not working to display the logos for the social media links. Using a link with version 4.7.0 fixed the problems on one of the pages. I intend to investigate this issue when more time is available.
+This link was causing problems in the footer section not working to display the logos for the social media links. Using a link with version 4.7.0 fixed the problems.
 
-However I do intend to get to the bottom of the matter
-Another issue is the logos for the social media links are not showing on the leaderboard and the score entry page. I will also coorect this with more time
 
 [StackOverflow](https://stackoverflow.com/questions/48919200/github-pages-only-showing-readme-file) whilst trying to deploy I could only see my ReadMe on Github Pages
 
