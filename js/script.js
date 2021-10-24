@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", init);
 //Function to get the players name and enter it at the top of the score card
 function getInputValue() {
     let res = document.getElementById("name").value;
-    return res.toUpperCase()
+    return res.toUpperCase();
 }
 
 // First name and last name validation
@@ -53,7 +53,6 @@ function validate() {
 }
 
 function refreshBoard() {
-    //init();
     for (let i = 0; i < 9; i++)
         document.getElementById('result' + i).innerHTML = "";
     document.getElementById('total-score').innerHTML = "";
@@ -100,7 +99,7 @@ function saveScores() {
     let name = getInputValue();
     //document.getElementById('name').value;
     scoresObject[name] = getArrayTotal();
-    localStorage.setItem(LOCAL_STORAGE_GAME_SCORES, JSON.stringify(scoresObject))
+    localStorage.setItem(LOCAL_STORAGE_GAME_SCORES, JSON.stringify(scoresObject));
 }
 
 btn.onclick = function() {
@@ -128,9 +127,6 @@ btn.onclick = function() {
         init();
 
     }
-    console.log("The value of inputElement(value) is " + (iThValue));
     console.log(array);
-
-
 
 }

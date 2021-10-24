@@ -37,11 +37,13 @@ Golf is played in Ireland by over 180,000 people. This is the number of register
 The goal of the project is to provide a web based application to groups of casual golfers. The application will offer a means of collecting the scores of golf players who have just finished playing a round of golf and wish to submit their scores to calculate the winner of a competition. The player will enter their score (in golf strokes) for each golf hole and be given a total of the strokes for the round.
 As this is a project to be completed for a Milestone Project for the Code Institute the goal is to create an interactive website demonstrating this skills learn in the second phase of the course.
 The project was created using HTML CSS and JavaScript and is ready for further development. I would like very much to develop the project using the new skills that I will learn in the next stages of the course such as adding a database to store user statistics. This can be done back-end applications and using the Python language.
+
 ## User Goals
 
 The user of the site will be initially be the organizer of the event usually the captain of the golf society. The captain will set up the event and he will then instruct the competitors to log in with their names and be taken to the score entry page.
 This method of collecting scores will give the organizer a immediate update on the players scores and information on who is leading the competition. The player who is entering his score will get a total of the number of strokes and a verification that his score has been entered on the system.
 The player can also view the leaderboard and see how they have fared in the competition.
+
 ## User Stories
 
 The user/player is introduced to the site by the event organizer.
@@ -89,18 +91,44 @@ In the professional environment the user is presented with stream of advertising
 ## UX
 
 The home page is designed to be a relatively simple page with a Navigation bar, a hero image of the golf course and banner message with information on the event. 
+
 This is followed by a carousel allowing the site to show the user multiple images of the golf course. The footer will contain useful contact information.
 This page serves as an introduction to the event as all the users will already be familiar with.
 The most important element on the page is the "Score Entry" button which is a link that takes the user to the score entry page.
+On the Score Entry page the user is prompted to enter their first and last name
+I have added name validation functionality to check the name input for alpha characters and a first name and last name.
+For clarity I decided to capitalize the name input and followed that though to the scorecard header and the leaderboard entries
+The function uses Regular Expressions to check the input.
+
+```
+function validate() {
+    var regName = /^[a-zA-Z]+ [a-zA-Z]+$/;
+    var name = document.getElementById('name').value;
+    if (!regName.test(name)) {
+        alert('Please enter your full name (first & last name).');
+        document.getElementById('name').focus();
+        return false;
+    } else {
+        alert('Valid name given.');
+        document.getElementById("player-name").innerHTML = getInputValue();
+        return true;
+    }
+}
+
+```
+The validated name is then entered at the top of the scorecard and the user proceeds to sequentially enter their score for each hole.
 The layout of the page is based on the score entry system used by HowdidIdo.com used by golf clubs and the Maths game used in the Code Institute course on Javascript demonstrated by Matt Rudge.
 This combination seemed to fit perfectly the requirements for the purpose.
-The increment/decrement buttons around the par value and the hole count keeping track of the hole number.
+The answer box or score box fetches the par value from the scorecard for the hole and the users clicks
+the increment/decrement buttons around the par value to get their score quickly.
+The Submit button takes the entry and saves it to the scorecard.
+When the limit 
 
 ## Design Choice     
 
 The site layout contains a navigation bar, a banner image, a welcome message and event details section, a carousel with multiple images of the golf course, an information section and a footer.
 This is a simple layout which can be developed to suit many different courses throughout the country and indeed abroad
-In the center of the page is the "Score Entry" button which is the call to action for the page. This takes the user to the score entry page 
+In the center of the page is the "Score Entry" button which is the call to action for the page. This takes the user to the score entry page. 
 
 This page contains the business area of the site. The layout directs the user to log in and enter their score via the score entry area to appear in the score card table. The structure and layout of the score entry area is based on the Maths game used in the JavaScript course. The increment and decrement were a perfect fit for the score entry structure. The JavaScript content takes some elements from the game but is largely modified. Extra functions to get the players name, fetch the par values and present them in the score entry box, log the scores in the score card, total the numbers of strokes and add the total score to the score card 
 The leaderboard page contains a table with a column for the players names and a column for the total scores for each individual. The structure is based on the local storage property that allows access to a storage object saved across browser sessions. This accessed by functions created in both the JavaScript files on the site. The site is configured for a maximum of 9 players but can easily be extended
@@ -132,7 +160,8 @@ A carousel on the home page can show a range of images of a given course. Many m
 
 #### Features Left to Implement 
 
-As the project was implemented using only front-end interactive technologies there is plenty of scope for development by employing backend services. The app was setup with 9 holes and a limit of 9 players. It would be very easy to extend this. But the first task was to get the app to work and then to extend later. I will look at improving the user experience by experimenting with different layouts and use of buttons 
+As the project was implemented using only front-end interactive technologies there is plenty of scope for development by employing backend services. The app was setup with 9 holes and a limit of 9 players. It would be very easy to extend this. But the first task was to get the app to work and then to extend later. I will look at improving the user experience by experimenting with different layouts and use of buttons.
+I would like to have the score entry and the buttons hidden until the name had been entered but I will implement this at a later date. 
 
 In order to keep the user coming back to the site records of each event and associated statistics could be made available. The user could look up every time a round of golf was played and the individual scores at the time. Using the historical data a host of other useful statistics can be calculated. The user can measure their performance over time. As with similar sites relevant advertisements can be displayed to the user and an e-commerce utility could be added to the site.Using the landing page with its carousel and banner image it is possible to show multiple images of a given course and it would be a feature that could be extended over time. Templates could be set up for any number of different courses
 
@@ -175,6 +204,9 @@ directory level into the file path by placing the images folder inside the css f
 During testing I discovered that on the iPad in Chrome Dev Tools the score entry section is jumbled yet it works on an iPad Pro. I was able to correct this by modifying the css rules
 Javascript code was checked on 
   -  [jshint](https://jshint.com/)
+
+  The code check identified 2 missing semicolons which were corrected. The code check also identified a number of unused variables one of which was a function definitely in use so I was reluctant to change these elements.
+
  
 
 ## Bugs
