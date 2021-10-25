@@ -141,18 +141,17 @@ The leaderboard page contains a table with a column for the players names and a 
 I have in included three desktop wireframes, one for iphone and one for ipad
 Desktop Wireframes:
 
-![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/index_desktop_wireframe.png)
+[Index Page Desktop Wireframe](https://marks530.github.io/ms2-project-resubmit/wireframes/index_desktop_wireframe.png)
 
-![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/score_entry_desktop_wireframe.png)
+[Score Entry Desktop Wireframe](https://marks530.github.io/ms2-project-resubmit/wireframes/score_entry_desktop_wireframe.png)
 
-![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/leaderboard_desktop_wireframe.png)
+[Leaderboard Desktop Wireframe](https://marks530.github.io/ms2-project-resubmit/wireframes/leaderboard_desktop_wireframe.png)
 
 iPad Wireframe:
-
-![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/ipad_index_desktop_wireframe.png)
+[iPad Index Page Wireframe](https://marks530.github.io/ms2-project-resubmit/wireframes/ipad_index_desktop_wireframe.png)
 
 iPhone Wireframe:
-![alt text](https://marks530.github.io/ms2-project-resubmit/wireframes/score_entry_iphone.png)
+[Wireframe Score Entry](https://marks530.github.io/ms2-project-resubmit/wireframes/score_entry_iphone.png)
 
 ## Features
 
@@ -167,7 +166,7 @@ The localStorage properties allow to save key/value pairs in a web browser. The 
 ```
 During testing it was necessary to clear the local storage and this done in the dev tools of the browser. Select Applications in Dev Tools and right-click on the highlighted area in Storage.
 
-![Dev Tools clear Local Storage](https://marks530.github.io/ms2-project-resubmit/images/local_storage.jpeg)
+[Dev Tools clear Local Storage](https://marks530.github.io/ms2-project-resubmit/images/local_storage.jpeg)
 
 **Code Snippet Example - Local Storage**
 
@@ -213,15 +212,15 @@ Completed testing of all the html code at the following address
  The results of the first validation checks are shown below
  The result from the index.html page
 
- ![index validation check](https://marks530.github.io/ms2-project-resubmit/images/index.html_validation_check.jpeg)
+[Index validation check](https://marks530.github.io/ms2-project-resubmit/images/index.html_validation_check.jpeg)
 
  All the problems and warning were investigated and resolved as shown in the image below.
 
- ![index pass validation](https://marks530.github.io/ms2-project-resubmit/images/validation_pass_index_page.jpeg)
+[index pass validation](https://marks530.github.io/ms2-project-resubmit/images/validation_pass_index_page.jpeg)
 
 The result from the score.html page
 
-![score validation check](https://marks530.github.io/ms2-project-resubmit/images/score.html_validation_report.jpeg)
+[score validation check](https://marks530.github.io/ms2-project-resubmit/images/score.html_validation_report.jpeg)
 
 All the errors were investigated and resolved as shown in the image below. A single warning remained and was deemed necessary to leave in place.
 
@@ -229,9 +228,14 @@ All the errors were investigated and resolved as shown in the image below. A sin
 
 The result from the leaderboard.html page
 
-![leaderboard validation check](https://marks530.github.io/ms2-project-resubmit/images/leaderboard.html_validation.jpeg)
+[Leaderboard validation check](https://marks530.github.io/ms2-project-resubmit/images/leaderboard.validation.jpeg)
 
 All the problems and warning were investigated and resolved as shown in the image below.
+
+CSS Code Validation Result
+
+[CSS validation check](https://marks530.github.io/ms2-project-resubmit/images/css_validation_result.jpeg)
+
 
 On each page I evaluated the navbar, from Desktop to Mobile, watching the behaviour of the dropdown menu on each of the different screens. I also ensured the hamburger dropdown menu was working correctly and in position once it was visible on screen.
 Testing of the site was done on an iMac using Chrome, Safari and Firefox and checking the iPad and iPhone views in Dev Tools.
