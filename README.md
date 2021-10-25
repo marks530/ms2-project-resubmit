@@ -72,6 +72,7 @@ The Score Entry process is as follows
 * then the hole number is incremented automatically and the par value for that hole is presented in the answer box
 * the user enters the score for nine holes and is congratulated and given a message showing the total numbers of strokes
 * the total is entered at the total row on the score card along with the scores for each hole
+* the user is is invited to the leaderboard page to view the scores recorded so far.
 
 The score entry area is programmed the present the golf holes starting at hole 1 and ending at hole 9 (18 holes will introduced as the app evolves)and the score entry box will already contain the par value for the given hole and that will be the default score for each hole. 
 This application will reduce the onerous task of collating all the scores for all the players and the organizer. At the moment the application is limited in its scope and will be developed as the Full Stack course progress.
@@ -164,7 +165,7 @@ The site uses the browsers Window.localStorage Web API to store the player and t
 The localStorage properties allow to save key/value pairs in a web browser. The localStorage object stores data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year. The localStorage property is read-only.
 
 ```
-During testing it was necessary to clear the local storage and this done in the dev tools of the browser.
+During testing it was necessary to clear the local storage and this done in the dev tools of the browser. Select Applications in Dev Tools and right-click on the highlighted area in Storage.
 
 ![Dev Tools clear Local Storage](https://marks530.github.io/ms2-project-resubmit/images/local_storage.jpeg)
 
@@ -187,8 +188,10 @@ function saveScores() {
 #### Features Left to Implement 
 
 As the project was implemented using only front-end interactive technologies there is plenty of scope for development by employing backend services. The app was setup with 9 holes and a limit of 9 players. It would be very easy to extend this. But the first task was to get the app to work and then to extend later. I will look at improving the user experience by experimenting with different layouts and use of buttons.
-I would like to have the score entry and the buttons hidden until the name had been entered but I will implement this at a later date.
-Another feature I would like to implement is to have leaderboard change with each new entry and list the players according to their scores.
+
+* I would like to have the score entry and the buttons hidden until the name had been entered but I will implement this at a later date. It is still possible to enter a score without entering a player name.
+
+* Another feature I would like to implement is to have leaderboard change with each new entry and list the players according to their scores.
 
 In order to keep the user coming back to the site records of each event and associated statistics could be made available. The user could look up every time a round of golf was played and the individual scores at the time. Using the historical data a host of other useful statistics can be calculated. The user can measure their performance over time. As with similar sites relevant advertisements can be displayed to the user and an e-commerce utility could be added to the site.Using the landing page with its carousel and banner image it is possible to show multiple images of a given course and it would be a feature that could be extended over time. Templates could be set up for any number of different courses
 
@@ -251,10 +254,10 @@ Javascript code was checked on
 
 ## Bugs
 
-The bootstrap class 'table-responsive' was required to correct the display of the leaderboard card on the 
-leaderboard page. The problem only occurred on an iphone 6 and made the leaderboard card spill onto the div directly below. This meant that a slider control appeared at the side of the leaderboard card and its use is required to see the full score card. 
-I had some issues with the bootstrap link and did not have enough time to resolve all of them
+* The bootstrap class 'table-responsive' was required to correct the display of the leaderboard card on the leaderboard page. The problem only occurred on an iphone 6 and made the leaderboard card spill onto the div directly below. This meant that a slider control appeared at the side of the leaderboard card and its use is required to see the full score card. 
+* I had some issues with the bootstrap link and did not have enough time to resolve all of them
 This link was causing problems in the footer section not working to display the logos for the social media links. Using a link with version 4.7.0 fixed the problems.
+* There is a problem on the iPhone 6 in landscape mode, the buttons on the score entry page are not aligned correctly. But in portrait mode the app works well.
 
 
 [StackOverflow](https://stackoverflow.com/questions/48919200/github-pages-only-showing-readme-file) whilst trying to deploy I could only see my ReadMe on Github Pages
