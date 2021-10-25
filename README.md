@@ -160,10 +160,10 @@ The main features of the site are the interactive score card and leaderboard whi
 A carousel on the home page can show a range of images of a given course. Many more images can easily be added.
 The site uses the browsers Window.localStorage Web API to store the player and the scores data
 
-```
-The localStorage properties allow to save key/value pairs in a web browser. The localStorage object stores data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year. The localStorage property is read-only.
 
-```
+* The localStorage properties allow to save key/value pairs in a web browser. The localStorage object stores data with no expiration date. The data will not be deleted when the browser is closed, and will be available the next day, week, or year. The localStorage property is read-only.
+
+
 During testing it was necessary to clear the local storage and this done in the dev tools of the browser. Select Applications in Dev Tools and right-click on the highlighted area in Storage.
 
 [Dev Tools clear Local Storage](https://marks530.github.io/ms2-project-resubmit/images/local_storage.jpeg)
